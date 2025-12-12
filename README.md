@@ -1,11 +1,46 @@
-# Sample Snack app
+# Wathiq MVP
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+A lightweight UI prototype built in **React Native (Expo)** for the “Wathiq” platform.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Overview
+Wathiq is a service marketplace concept that connects individuals with verified service companies and technicians.
+This repository contains a **UI-only MVP** that demonstrates the main user journeys for a hackathon demo.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## App Flow
+1. **Splash Screen**
+   - Shows the Wathiq logo
+   - Auto proceeds after a short delay
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+2. **Welcome Screen**
+   - Individual login entry point
+   - Company login entry point
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+3. **Individual User Flow**
+   - Login (UI)
+   - Home dashboard
+   - Select service type
+   - Select company
+   - Select technician
+   - Booking form
+   - Booking confirmation
+
+4. **Company Flow**
+   - Company login (UI)
+   - Company dashboard (basic stats)
+
+## Tech Stack
+- React Native
+- Expo
+- JavaScript
+
+## Technical Note (Why no navigation libraries?)
+This MVP uses a **state-based navigation approach** (no external routing dependencies).
+This was chosen to keep the prototype:
+- fast to run in Expo Snack / demo environments
+- simple and dependency-free
+- focused on UX flow validation rather than production routing
+
+## Run Locally
+1. Install dependencies:
+   ```bash
+   npm install
